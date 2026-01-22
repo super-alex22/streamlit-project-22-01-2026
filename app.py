@@ -6,4 +6,5 @@ if st.button("Check"):
     st.warning("I'd like to kindly have you asked to enter text")
   elif not name is alpha():
     st.warning("Warning")
-  else st.success("The text has been entered correctly")
+  else:
+    st.success("The text has been entered correctly")
