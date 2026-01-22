@@ -3,8 +3,10 @@ st.title("Login system")
 name = st.text_input("Enter name")
 age = st.number_input("Enter age")
 if st.button("Check"):
-  if age<18 and name=="":
+  if age<18:
     st.error("You are not of legal age to use this program")
+  if name="":
+    st.error("Enter a valid name")
   if name.strip()=="":
     st.warning("I'd like to kindly have you asked to enter text")
   elif not name.isalpha():
